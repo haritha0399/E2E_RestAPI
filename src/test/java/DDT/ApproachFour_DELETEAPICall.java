@@ -2,15 +2,15 @@ package DDT;
 
 import static io.restassured.RestAssured.given;
 
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-public class ApproachThree_CreateUserUsingPost extends testDataForDDT {
+import com.beust.jcommander.Parameters;
 
-	@Test(dataProvider = "deleteUserDDT")
-	public void createUserPostAPIDDT(Object idToDelete) {
-		
-		
+public class ApproachFour_DELETEAPICall {
+
+	@Parameters ({"idToDelete"})
+	@Test
+	public void deleteUser(int idToDelete) {
 		given().
 		header("Accept","application/json").
 		header("Content-Type","application/json").
@@ -23,5 +23,4 @@ public class ApproachThree_CreateUserUsingPost extends testDataForDDT {
 		statusCode(204).
 		log().all();
 	}
-	
 }

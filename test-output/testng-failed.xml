@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DDT.ApproachTwo_DeleteUserUsingDelete">
+      <class name="DDT.ApproachThree_CreateUserUsingPost">
         <methods>
-          <include name="deleteUser" invocation-numbers="0 1 2 3"/>
+          <include name="createUserPostAPIDDT" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- DDT.ApproachTwo_DeleteUserUsingDelete -->
+      </class> <!-- DDT.ApproachThree_CreateUserUsingPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
